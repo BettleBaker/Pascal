@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pascal's Triangle & The Golden Ratio</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container nav-flex">
+                <div class="logo">
+                    <span class="logo-cube">&#x25A3;</span>
+                    <span class="logo-text">PASCAL</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#generator">Generator</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="hero" id="hero">
+        <div class="container hero-flex">
+            <div class="hero-content">
+                <h1>Pascal's Triangle & The Golden Ratio</h1>
+                <p class="hero-sub">Discover the beauty of mathematics in nature, art, and film.</p>
+                <div class="hero-buttons">
+                    <a href="#generator" class="primary-button">Try Generator</a>
+                </div>
+            </div>
+            <div class="hero-cube">
+                <div class="cube-container">
+                    <div class="cube">
+                        <div class="cube-face front"></div>
+                        <div class="cube-face back"></div>
+                        <div class="cube-face right"></div>
+                        <div class="cube-face left"></div>
+                        <div class="cube-face top"></div>
+                        <div class="cube-face bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- Triangle SVG -->
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <polygon points="24,6 44,42 4,42" fill="#4361ee" stroke="#fff" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Pascal's Triangle Generator</h3>
+                    <p>Generate any number of rows and visualize the triangle interactively.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- Abstract Math Curve SVG -->
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M6 42 Q24 6 42 42" stroke="#f72585" stroke-width="3" fill="none"/>
+                          <circle cx="24" cy="24" r="4" fill="#4895ef"/>
+                        </svg>
+                    </div>
+                    <h3>Modern Math Visuals</h3>
+                    <p>Enjoy beautiful, animated math curves and 3D elements inspired by UK design.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <!-- Golden Spiral SVG -->
+                        <svg width="48" height="48" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M100,100 Q100,61.8 61.8,61.8 Q61.8,100 100,100 M61.8,61.8 Q61.8,38.2 38.2,38.2 Q38.2,61.8 61.8,61.8 M38.2,38.2 Q38.2,23.6 23.6,23.6 Q23.6,38.2 38.2,38.2 M23.6,23.6 Q23.6,15.4 15.4,15.4 Q15.4,23.6 23.6,23.6" stroke="#ffd700" stroke-width="3" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3>Golden Ratio</h3>
+                    <p>See how the golden ratio inspires beautiful design and appears in nature, art, and film.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="generator-section" id="generator">
+        <div class="container">
+            <h2>Generate Pascal's Triangle</h2>
+            <form id="pascal-form">
+                <label for="rows">Number of Rows:</label>
+                <input type="number" id="rows" name="rows" min="1" max="20" value="5" required>
+                <button type="submit">Generate</button>
+            </form>
+            <div id="pascal-output"></div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>Made with ❤️ | Explore math everywhere!</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html> 
